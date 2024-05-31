@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> log in form </title>
+    <script>
+        function validateForm(){
+            let  name= document.getElementById("name").value();
+            let email= document.getElementById("email").value();
+            let password= document.getElementById("password").value();
+            let confirmPassword=document.getElementById("confirmpassword").value();
+            let phone =document.getElementById("phone").value();
+            let aadhar= document.getElementById("aadhar").value();
+
+            if (name===""){
+                alert("please enter valid name")
+                return  false;
+            }
+
+             var emailRegex= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+             if (!emailRegex.test(email)){
+                alert("please enter the valid email address");
+                return false;
+             }
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

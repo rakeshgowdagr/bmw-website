@@ -1,0 +1,9 @@
+
+    .boss{
+        padding: 30px;
+        border: black;
+        border-radius: 40px;
+        height: 250px;
+        transition:transform 0.50s;
+        
+      }
